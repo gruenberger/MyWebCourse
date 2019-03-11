@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics of HTML, CSS, and JavaScript</title>
+    <script>
+        function init() {
+            const me = {name: 'Andrew', email: 'andrewgruenberger@gmail.com', hobbies: ['weight training', 'eating donuts', 'changing diapers']};
+            document.getElementById("name").innerHTML = me.name;
+            document.getElementById("email").innerHTML = me.email;
+            let hobbies = "<ul>";
+            var i;
+            for(i =0; i < me.hobbies.length; i++){
+                hobbies += "<li>"+me.hobbies[i]+"</li>";
+            }
+            hobbies += "</ul>";
+
+            document.getElementById("hobbies").innerHTML = hobbies;
+            
+        }
+    </script>
+    <style>
+        div {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid purple;
+            background-color: grey;
+            color: purple
+        }
+    </style>
+</head>
+<body onload="init()">
+    <div id="name"></div>
+    <div id="email"></div>
+    <div id="hobbies"></div>
+    
+</body>
+</html>
