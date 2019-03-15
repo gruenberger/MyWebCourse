@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Feedback Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        div.input {display: block;
+            margin: 30px; 
+        }
+    </style>
+</head>
+<body>
+    <form id="commentsForm">
+        <fieldset>
+        <legend>Your Feedback</legend>
+        
+        <div class="input">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+        </div>
+        <div class="input">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+        </div>
+        <div class="input">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="input">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required />
+        </div>
+        <div class="input">
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="textarea" cols="30" rows="10" required form="commentsForm"></textarea>
+        </div>
+    </fieldset>
+
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Reset" />
+    </form>
+    
+</body>
+</html>

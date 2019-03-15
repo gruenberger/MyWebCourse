@@ -1,6 +1,7 @@
     /* @import url('halloween.css'); */
 @media screen {
     body {
+        background-color: rgb(239, 241, 77);
         color: red;
         font-size:100%;
         }
@@ -11,19 +12,36 @@
     h2 {
         color: green;
         font-style:italic;
-        font-size:1.5em;   
+        font-size:1.5em;
+ 
         }
+    article h2 {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e779a+20,2ab5d8+50,1e779a+80&0+0,0.8+15,1+19,1+81,0.8+85,0+100 */
+        background: -moz-linear-gradient(-45deg, rgba(30,119,154,0) 0%, rgba(30,119,154,0.8) 15%, rgba(30,119,154,1) 19%, rgba(30,119,154,1) 20%, rgba(42,181,216,1) 50%, rgba(30,119,154,1) 80%, rgba(30,119,154,1) 81%, rgba(30,119,154,0.8) 85%, rgba(30,119,154,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(30,119,154,0) 0%,rgba(30,119,154,0.8) 15%,rgba(30,119,154,1) 19%,rgba(30,119,154,1) 20%,rgba(42,181,216,1) 50%,rgba(30,119,154,1) 80%,rgba(30,119,154,1) 81%,rgba(30,119,154,0.8) 85%,rgba(30,119,154,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(30,119,154,0) 0%,rgba(30,119,154,0.8) 15%,rgba(30,119,154,1) 19%,rgba(30,119,154,1) 20%,rgba(42,181,216,1) 50%,rgba(30,119,154,1) 80%,rgba(30,119,154,1) 81%,rgba(30,119,154,0.8) 85%,rgba(30,119,154,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e779a', endColorstr='#001e779a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+    }
     header {
         text-align: center;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9c667+32,f79621+87 */
+        background: rgb(249,198,103); /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, rgba(249,198,103,1) 32%, rgba(247,150,33,1) 87%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(249,198,103,1) 32%,rgba(247,150,33,1) 87%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, rgba(249,198,103,1) 32%,rgba(247,150,33,1) 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', endColorstr='#f79621',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
         }
     header h2 {
         color: black;
         }
-    header li {
-        list-style: none;
-        }
-    nav a {
+    nav p {
         text-decoration: none;
+        display: inline-block;
+        font-variant: small-caps;
+        width:200px;
+        height:50px;
+        padding:10px;
+        background-color:red;
         }
     main article h2 span {
         color: black;
@@ -38,9 +56,6 @@
         }
     footer {
         font-weight: bold;
-        }
-    li {
-        font-variant: small-caps;
         }
 
     a:link {
@@ -61,6 +76,15 @@
         color:yellow;
 
         }
+    a {
+        text-decoration: none;
+    }
+    article {
+        border-bottom: solid orange;
+    }
+    main {
+        padding: 10px;
+    }
 
 }
 

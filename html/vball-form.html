@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VBall- Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <style>
+        input {display: block}
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Register for Nerdy Volleyball Training Camp</h1>
+        <fieldset >
+            <legend>Personal Details</legend>
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="fname" required/>
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" name="lname" required/>
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required/>
+            <label for="Email *">Email *</label>
+            <input type="email" id="email" name="email" required/>
+            <label for="password">Password *</label>
+            <input type="password" id="password" name="password" required/>
+            <label for="rPassword">Repeat Password *</label>
+            <input type="password" id="rPassword" name="rPassword" required/>
+            <label for="github">Your Github URL</label>
+            <input type="url" id="github" name="github"/>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone"/>
+            <label for="shoesize">Shoesize</label>
+            <input type="number" id="shoesize" name="shoesize"/>
+            <label for="skill">Skill Level (1 novice, 10 expert)</label>
+            <input type="number" id="skill" name="skill" min="1" max="10"/>
+        </fieldset>
+        <fieldset>
+            <legend>Billing Address</legend>
+            <label for="address">Address *</label>
+            <input type="text" id="address" name="address" required/>
+            <label for="zip">Zip *</label>
+            <input type="number" id="address" name="zip" maxlength="5" required />
+            <label for="country">Country *</label>
+            <select id="country" name="country" required>
+                <option>Country...</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Card details</legend>
+            <fieldset>
+                <legend>Card Type</legend>
+                <label for="visa">Visa</label>
+                <input type="radio" name="cardType" id="visa" />
+                <label for="masterCard">Mastercard</label>
+                <input type="radio" name="cardType" id="masterCard" />
+                <label for="amex">AMEX</label>
+                <input type="radio" name="cardType" id="amex" />
+            </fieldset>
+            <label for="nameOnCard">Name *</label>
+            <input type="text" id="nameOnCard" name="nameOnCard" required/>
+            <label for="cardNumber">Card number *</label>
+            <input type="number" id="cardNumber" name="cardNumber" minlength="16" maxlength="16" required/>
+            <label for="expire">Expiration *</label>
+            <input type="date" id="expire" name="expire" required/>
+        </fieldset>
+
+        <input type="submit" value="Register" />
+
+    </form>
+</body>
+</html>
